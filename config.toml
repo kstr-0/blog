@@ -5,6 +5,12 @@ title = 'Kstr-0'
 theme = 'hugo-blog-awesome'
 defaultContentLanguage = "en"
 
+[markup]
+  [markup.highlight]
+    noClasses = false
+  [markup.goldmark.renderer]
+    unsafe = true
+
 # Menu config
 [menu]
   [[menu.main]]
@@ -16,7 +22,7 @@ defaultContentLanguage = "en"
 #defines parameters (see theme docs)
 [params]
   sitename = "Awesome hugo blog"
-  defaultColor = "dark" # set default color mode: dark or light
+  defaultColor = "light" # set default color mode: dark or light
   description = "Minimal Hugo blog theme with light and dark mode support"
 
 [params.author]

@@ -19,8 +19,8 @@ jobs:
           ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
 
       - name: Setup Hugo
-      uses: peaceiris/actions-hugo@v2
-      with:
+        uses: peaceiris/actions-hugo@v2
+        with:
           hugo-version: 'latest'
 
       - name: Build the website

@@ -1,4 +1,4 @@
-baseURL = 'http://kstr0.xyz/'
+baseURL = 'https://kstr0.xyz/'
 languageCode = 'en-us'
 title = 'Kstr-0'
 
@@ -33,7 +33,7 @@ defaultContentLanguage = "en"
 
 [[params.socialIcons]]
   name = "github"
-  url = "https://github.com/hugo-sid"
+  url = "https://github.com/kst-0"
 
 [[params.socialIcons]]
    name = "Mastodon"
@@ -41,7 +41,7 @@ defaultContentLanguage = "en"
 
 [[params.socialIcons]]
    name = "twitter"
-   url = "https://twitter.com"
+   url = "https://twitter.com/0xKierstro"
 
 [[params.socialIcons]]
    name = "Rss"

@@ -1,0 +1,42 @@
+baseURL = 'http://kstr0.xyz/'
+languageCode = 'en-us'
+title = 'Kstr-0'
+
+theme = 'hugo-blog-awesome'
+defaultContentLanguage = "en"
+
+# Menu config
+[menu]
+  [[menu.main]]
+    pageRef="posts"
+    name = 'Posts'
+    url = '/posts/'
+    weight = 20
+
+#defines parameters (see theme docs)
+[params]
+  sitename = "Awesome hugo blog"
+  defaultColor = "dark" # set default color mode: dark or light
+  description = "Minimal Hugo blog theme with light and dark mode support"
+
+[params.author]
+  avatar = "avatar.png"
+  intro = "Kstr-0"
+  name = "Kstr-0"
+  description = "A good Joe"
+
+[[params.socialIcons]]
+  name = "github"
+  url = "https://github.com/hugo-sid"
+
+[[params.socialIcons]]
+   name = "Mastodon"
+   url = "index.xml"
+
+[[params.socialIcons]]
+   name = "twitter"
+   url = "https://twitter.com"
+
+[[params.socialIcons]]
+   name = "Rss"
+   url = "index.xml"

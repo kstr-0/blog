@@ -22,7 +22,7 @@ defaultContentLanguage = "en"
 #defines parameters (see theme docs)
 [params]
   sitename = "Awesome hugo blog"
-  defaultColor = "auto" # set default color mode: dark or light
+  defaultColor = "dark" 
   description = "Minimal Hugo blog theme with light and dark mode support"
 
 [params.author]

@@ -42,7 +42,3 @@ defaultContentLanguage = "en"
 [[params.socialIcons]]
    name = "twitter"
    url = "https://twitter.com/0xKierstro"
-
-[[params.socialIcons]]
-   name = "Rss"
-   url = "index.xml"

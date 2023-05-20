@@ -29,9 +29,8 @@ defaultContentLanguage = "en"
   avatar = "avatar.png"
   intro = "Kstr-0"
   name = "Kstr-0"
-  description = "A good Joe"
+  description = "Hey there! I'm Kstr-0, a computer hobbyist and tinkerer from Glasgow. Welcome to my little online space!"
 
 [[params.socialIcons]]
   name = "github"
   url = "https://github.com/kstr-0"
-

@@ -33,12 +33,5 @@ defaultContentLanguage = "en"
 
 [[params.socialIcons]]
   name = "github"
-  url = "https://github.com/kst-0"
+  url = "https://github.com/kstr-0"
 
-[[params.socialIcons]]
-   name = "Mastodon"
-   url = "index.xml"
-
-[[params.socialIcons]]
-   name = "twitter"
-   url = "https://twitter.com/0xKierstro"

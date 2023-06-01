@@ -12,7 +12,7 @@ It was from there that I had an idea to mod a Game Boy and present it as a gift 
 ### What you'll need for the mods
 It should go without saying but you'll need a Game Boy Advanced, so if you need me to tell you that... I don't know what to say... You'll also need to purchase some addtional parts (some of which are optional) depending on the mod you'd like to carry out. I purchased the below parts however, I would recommend that you read on before pulling the trigger on purchasing anything. Now having experience to draw from, I would have done things differently.
 
-![Parts for the mod](images/moddedGB/BagParts.JPG)
+![Parts for the mod](images/BagParts.JPG)
 
 Firstly the core of this console mod without a shadow of a doubt is the IPS display. It's probably the reason you should be modding the console in the first place. After doing a bit of research, I opted to get the Funnyplaying IPS V2 screen with flex ribbon. The screen from what I can tell offers the greatest visual clarity and vibrancy however, there are alternatives that can perhaps offer a more retro look like the AGS-101 or Retrosix CleanScreen.
 

@@ -1,7 +1,7 @@
 ---
 title: "Modding the Gameboy Advanced (Re-upload)"
 date: 2023-06-01T22:45:41Z
-draft: true
+draft: fasle
 ---
 
 ### Some background
@@ -34,7 +34,7 @@ Given the above information, you'll also require the appropriate tools (again de
 
 After having tested to confirm your Game Boy is working etc, de-shelling the Game Boy is pretty straight forward. Turn the console over and remove the battery cover. You'll notice 7 screws on the back. I've circled the Tri-wing screws in red and the Philips screw in green.
 
-![Highlighted screws](HighlightedScrews.JPG)
+![Highlighted screws](HighlightedScrews.png)
 
 Simply unscrew these screws and the backplate of the console should detach from the rest of the console to reveal the internal motherboard.
 
@@ -42,7 +42,7 @@ Simply unscrew these screws and the backplate of the console should detach from 
 
 Once you've removed the backplate, you're almost ready to remove the motherboard. Lift the tabs on the locking mechanism that hold in the current screen's ribbon cable, which I've circled in red below. Also take note of the number of pins your board has, this is usually printed on the board (circled in green). I ended up having to use a 32 pin board after failing to solder the speaker mods properly.
 
-![Highlighted latches and pins](HighlightedLatches.png)
+![Highlighted latches and pins](HightedLatches.png)
 
 Once you've unlocked the ribbon cable from the motherboard. There will be Philips screws holding the board onto the front plate. Unscrew these screws.
 
@@ -50,7 +50,7 @@ Once you've unlocked the ribbon cable from the motherboard. There will be Philip
 
 Now you can gently remove the motherboard from the console's shell.
 
-![Console's motherboard](Motherboard.JPG)
+![Console's motherboard](MotherBoard.JPG)
 
 At this point, I had attempted to solder the board, and it's speaker. You can attach attach various speaker mods if you've got the soldering expierence, however I ultimately ended up ruining the board pictured above... If you see further pictures showing a 2 volt speaker. It can be ignored.
 

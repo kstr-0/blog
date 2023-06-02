@@ -1,7 +1,7 @@
 ---
 title: "Modding the Gameboy Advanced (Re-upload)"
 date: 2023-06-01T22:45:41Z
-draft: false
+draft: true
 ---
 
 ### Some background

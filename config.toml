@@ -27,10 +27,14 @@ defaultContentLanguage = "en"
 
 [params.author]
   avatar = "avatar.png"
-  intro = "Kstr-0"
-  name = "Kstr-0"
+  intro = "Kstr0"
+  name = "Kstr0"
   description = "Hey there! I'm Kstr-0, a computer hobbyist and tinkerer from Glasgow. Welcome to my little online space!"
 
 [[params.socialIcons]]
   name = "github"
   url = "https://github.com/kstr0git"
+
+[[params.socialIcons]]
+  name = "mastodon"
+  url = "https://ieji.de/@kstr0"

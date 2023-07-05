@@ -1,6 +1,6 @@
 baseURL = 'https://kstr0.xyz/'
 languageCode = 'en-us'
-title = 'Kstr-0'
+title = 'Kstr0'
 
 theme = 'hugo-blog-awesome'
 defaultContentLanguage = "en"
@@ -33,4 +33,4 @@ defaultContentLanguage = "en"
 
 [[params.socialIcons]]
   name = "github"
-  url = "https://github.com/kstr-0"
+  url = "https://github.com/kstr0git"

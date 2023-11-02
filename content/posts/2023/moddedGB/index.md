@@ -5,12 +5,12 @@ draft: fasle
 ---
 
 ### Some background
-It’s no surprise to anyone in my social circles that I’m a massive gamer, so by the law of attraction, my best friend happens to be a gamer himself, particularly a Nintendo fan. He’s been collecting games and consoles for a while, and while we both fuel each other’s collections, I wanted to get him something unique and special but still in line with our personalities and usual gifts. We were walking down the street one day, discussing our childhood and first real exposure to gaming. With my friend being Chinese, I was particularly invested in the discussion and the difference in experiences we both had, considering that most games from 2000 up until 2015 were banned within mainland China. I found out that his first console, like many others, was the Game Boy, and he shared some funny anecdotes about how his grandfather managed to sneak the Game Boy from Hong Kong and how, because games were so hard to come by, an entire classroom would share a single game cartridge or trade different demos or pirate copies of games. Particularly, he told me about his escapade with Castlevania and how he excitedly thought he managed to get his hands on the renowned Konami masterpiece when in reality he only had a demo copy.
+It’s no surprise to anyone in my social circles that I’m a massive gamer, so by the law of attraction, my best friend happens to be a gamer himself, particularly a Nintendo fan. He’s been collecting games and consoles for a while, and while we both fuel each other’s collections, I wanted to get him something unique and special but still in line with our personalities and usual gifts. We were walking down the street one day, discussing our childhood and first real exposure to gaming. With my friend being Chinese, I was particularly invested in the discussion and the difference in experiences we both had, considering that most games from 2000 until 2015 were banned within mainland China. I found out that his first console, like many others, was the Game Boy, and he shared some funny anecdotes about how his grandfather managed to sneak the Game Boy from Hong Kong and how an entire classroom would share a single game cartridge.
 
-It was from there that I had the idea to mod a Game Boy and present it as a gift on his next birthday. I figured it would be a nice little introduction to electronics and thought that documenting the process would show the love and labour that went into it! After doing a bit of research into modding retro handhelds, I decided on the Game Boy Advance as it seems to be a popular choice within the modding community and, as a result, is a well-documented process.
+It was from there that I had the idea to modify a Game Boy and present it as a gift on his next birthday. I figured it would be a nice little introduction to electronics and thought that documenting the process would show the love and labour that went into it! After doing a bit of research into modding retro handhelds, I decided on the Game Boy Advance as it seems to be a popular choice within the modding community and, as a result, is a well-documented process.
 
 ### What you'll need for the mods
-It should go without saying, but you’ll need a Game Boy Advance, so if you need me to tell you that... I don’t know what to say. You’ll also need to purchase some additional parts (some of which are optional), depending on the mod you’d like to carry out. I purchased the below parts; however, I would recommend that you read on before pulling the trigger on purchasing anything. Now that I have experience to draw from, I would have done things differently.
+It should go without saying, but you’ll need a Game Boy Advance, you’ll also need to purchase some additional parts (some of which are optional). I purchased the below parts; however, I would recommend that you read on before pulling the trigger on purchasing anything. Now that I have experience to draw from, I would have done things differently.
 
 ![Parts for the mod](BagParts.JPG)
 
@@ -18,9 +18,13 @@ Firstly, the core of this console mod, without a shadow of a doubt, is the IPS d
 
 ![Purchased items](Parts.png)
 
-I purchased all my parts from ZedLabs, but Retrosiz and Retromodding are also great for sourcing fancy new parts.
+I purchased all my parts from ZedLabs, but Retrosix and Retromodding are also great for sourcing new parts.
 
-As you can tell from the above, I purchased a replacement speaker and audio amplifier. In hindsight, if I were going to attempt these mods again, I would recommend that you swap the Retro-Tobot mod out for something more beginner-friendly like the CleanAmp Pro, as there is more documentation surrounding the installation of the amp. The solder points are more or less the same for both amps; however, I made some mistakes as this was my first project requiring soldering, and the alignment of the amp proved to be quite tricky. It was a learning experience.
+As you can tell from the above, I purchased a replacement speaker and audio amplifier.
+
+{{% notice tip %}}
+if I were going to attempt these mods again, I would recommend that you swap the Retro-Tobot mod out for something more beginner-friendly like the CleanAmp Pro, as there is more documentation surrounding the installation of the amp. The solder points are more or less the same for both amps; however, I made some mistakes as this was my first project requiring soldering, and the alignment of the amp proved to be quite tricky. It was a learning experience.
+{{% /notice %}}
 
 Given the above information, you’ll also require the appropriate tools (again, depending on the parts you’ve purchased).
 

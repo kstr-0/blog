@@ -22,9 +22,7 @@ I purchased all my parts from ZedLabs, but Retrosix and Retromodding are also gr
 
 As you can tell from the above, I purchased a replacement speaker and audio amplifier.
 
-{{% notice tip %}}
 if I were going to attempt these mods again, I would recommend that you swap the Retro-Tobot mod out for something more beginner-friendly like the CleanAmp Pro, as there is more documentation surrounding the installation of the amp. The solder points are more or less the same for both amps; however, I made some mistakes as this was my first project requiring soldering, and the alignment of the amp proved to be quite tricky. It was a learning experience.
-{{% /notice %}}
 
 Given the above information, you’ll also require the appropriate tools (again, depending on the parts you’ve purchased).
 

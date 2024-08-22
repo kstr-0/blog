@@ -1,5 +1,5 @@
 # The URL the site will be built for
-base_url = "htttps://kstr0.xyz"
+base_url = "https://kstr0.xyz"
 title = "kstr0"
 description = "I like to take things apart"
 

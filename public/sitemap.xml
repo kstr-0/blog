@@ -1,18 +1,20 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  <url>
-    <loc>https://kstr0.xyz/posts/2023/helloworld/</loc>
-    <lastmod>2023-03-21T23:42:41+00:00</lastmod>
-  </url><url>
-    <loc>https://kstr0.xyz/</loc>
-    <lastmod>2023-03-21T23:42:41+00:00</lastmod>
-  </url><url>
-    <loc>https://kstr0.xyz/posts/</loc>
-    <lastmod>2023-03-21T23:42:41+00:00</lastmod>
-  </url><url>
-    <loc>https://kstr0.xyz/categories/</loc>
-  </url><url>
-    <loc>https://kstr0.xyz/tags/</loc>
-  </url>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>htttps://kstr0.xyz/</loc>
+    </url>
+    <url>
+        <loc>htttps://kstr0.xyz/blog/</loc>
+    </url>
+    <url>
+        <loc>htttps://kstr0.xyz/blog/hello-world/</loc>
+        <lastmod>2024-08-21</lastmod>
+    </url>
+    <url>
+        <loc>htttps://kstr0.xyz/projects/</loc>
+    </url>
+    <url>
+        <loc>htttps://kstr0.xyz/projects/moddedgb/</loc>
+        <lastmod>2023-06-01</lastmod>
+    </url>
 </urlset>

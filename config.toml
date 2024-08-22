@@ -1,40 +1,21 @@
-baseURL = 'https://kstr0.xyz/'
-languageCode = 'en-us'
-title = 'Kstr0'
+# The URL the site will be built for
+base_url = "htttps://kstr0.xyz"
+title = "kstr0"
+description = "I like to take things apart"
 
-theme = 'hugo-blog-awesome'
-defaultContentLanguage = "en"
+# Whether to automatically compile all Sass files in the sass directory
+compile_sass = true
 
-[markup]
-  [markup.highlight]
-    noClasses = false
-  [markup.goldmark.renderer]
-    unsafe = true
+# Whether to build a search index to be used later on by a JavaScript library
+build_search_index = false
 
-# Menu config
-[menu]
-  [[menu.main]]
-    pageRef="posts"
-    name = 'Posts'
-    url = '/posts/'
-    weight = 20
+theme = "fisher"
 
-#defines parameters (see theme docs)
-[params]
-  sitename = "Awesome hugo blog"
-  defaultColor = "dark" 
-  description = "Minimal Hugo blog theme with light and dark mode support"
+[markdown]
+# Whether to do syntax highlighting
+# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
+highlight_code = true
 
-[params.author]
-  avatar = "avatar.png"
-  intro = "Kstr0"
-  name = "Kstr0"
-  description = "Hey there! I'm Kstr-0, a computer hobbyist and tinkerer from Glasgow. Welcome to my little online space!"
-
-[[params.socialIcons]]
-  name = "github"
-  url = "https://github.com/kstr0git"
-
-[[params.socialIcons]]
-  name = "mastodon"
-  url = "https://ieji.de/@kstr0"
+[extra]
+github_account = "kstr0git"
+author = "kstr0"

@@ -18,34 +18,120 @@
 {% endblock meta_content %}
 
 {% block content %}
-<article class="grid-prose prose prose-h2: max-w-full prose-slate prose-base md:prose-lg dark:prose-invert">
+<article class="grid-prose prose prose-h2: max-w-full prose-neutral prose-base md:prose-lg dark:prose-invert">
     <div class="flex flex-col mb-4">
         <h1 class="!mb-2 !mt-0 sm:!mt-8 text-center">{{ page.title }}</h1>
+          <div class="flex w-32 border-b-4 border-stone-500 self-center p-1 !mb-2"></div>
         {% if page.date %}
-        <label class="text-center text-stone-500 ">Posted on <time datetime="{{ page.date | date(format="%+") }}">{{ page.date | date(format="%B %d, %Y") }}</time> • {{ page.reading_time }} minute read</label>
+        <label class="text-center text-stone-500">Posted on <time datetime="{{ page.date | date(format="%+") }}">{{ page.date | date(format="%B %d, %Y") }}</time> • {{ page.reading_time }} minute read</label>
         {% endif %}
+
+        <lable class="text-center text-stone-500 text-sm mb-2">
+          {% set_global sorted_taxonomies = [] %}
+          {% for taxonomy_name, _ in page.taxonomies %}
+          {% set_global sorted_taxonomies = sorted_taxonomies | concat(with=taxonomy_name) %}
+          {% endfor %}
+          {% set_global sorted_taxonomies = sorted_taxonomies | sort %}
+
+          {% for taxonomy_name in sorted_taxonomies %}
+          {% set terms = page.taxonomies[taxonomy_name] %}
+          • {{ taxonomy_name | capitalize }}:
+          {% for term_name in terms %}
+          {% set term = get_taxonomy_term(kind=taxonomy_name, term=term_name) %}
+          <a href="{{ term.permalink }}">{{ term.name }}</a>{% if not loop.last %},{% endif %}
+          {% endfor %}
+          {% endfor %}
+        </lable>
+
         <div class="flex flex-shrink justify-center text-white">
-            {% if page.extra.unlisted %}<span class="bg-gray-600 p-1 m-1 text-sm pl-2 pr-2 rounded">Unlisted</span>{% endif %}
+            {% if page.extra.unlisted %}<span class="bg-red-600 p-1 m-1 text-sm pl-2 pr-2 rounded">Unlisted</span>{% endif %}
         </div>
     </div>
 
     {% set meta = get_image_metadata(path=page.path ~ "banner.png", allow_missing=true) %}
     {% if meta %}
   <figure class="{% if page.extra.banner_extended %} break-out {% endif %} !mb-4 !mt-0">
-        <div class="bg-stone-200 dark:bg-slate-700 sm:rounded-lg">
+        <div class="bg-stone-200 dark:bg-neutral-700 sm:rounded-lg">
             <picture>
               <img height="500px" class="w-full aspect-square-3 rounded-none sm:rounded-lg !mb-0" src="{{ get_url(path=page.path ~ 'banner.png', cachebust=true) }}"/>
             </picture>
         </div>
         {% if page.extra.banner_label %}
-        <figcaption class="text-sm text-center">{{ page.extra.banner_label | markdown(inline=true) | safe }}</figcaption>
+        <figcaption class="text-sm text-stone-500 text-center">{{ page.extra.banner_label | markdown(inline=true) | safe }}</figcaption>
         {% endif %}
     </figure>
     {% endif %}
 
     {{ page.content | safe }} 
+</article>
+{% endblock content %}
+{% extends "base.html" %}
 
-    {% if page.extra.enable_comments %}
+{% block title %}
+<title>{{ page.title }} - {{ config.title }}</title>
+{% endblock title %}
+
+{% block meta_content %}
+<meta property="og:type" content="article"/>
+
+{% set meta = get_image_metadata(path=page.path ~ "banner.png", allow_missing=true) %}
+{% if meta %}
+    <meta property="twitter:image" content="{{ get_url(path=page.path ~ 'banner.png', cachebust=true) }}">
+    <meta property="og:image" content="{{ get_url(path=page.path ~ 'banner.png', cachebust=true) }}">
+    <meta name="twitter:card" content="summary_large_image">
+{% else %}
+    <meta name="twitter:card" content="summary">
+{% endif %}
+{% endblock meta_content %}
+
+{% block content %}
+<article class="grid-prose prose prose-h2: max-w-full prose-neutral prose-base md:prose-lg dark:prose-invert">
+    <div class="flex flex-col mb-4">
+        <h1 class="!mb-2 !mt-0 sm:!mt-8 text-center">{{ page.title }}</h1>
+          <div class="flex w-32 border-b-4 border-stone-500 self-center p-1 !mb-2"></div>
+        {% if page.date %}
+        <label class="text-center text-stone-500">Posted on <time datetime="{{ page.date | date(format="%+") }}">{{ page.date | date(format="%B %d, %Y") }}</time> • {{ page.reading_time }} minute read</label>
+        {% endif %}
+
+        <lable class="text-center text-stone-500 text-sm mb-2">
+          {% set_global sorted_taxonomies = [] %}
+          {% for taxonomy_name, _ in page.taxonomies %}
+          {% set_global sorted_taxonomies = sorted_taxonomies | concat(with=taxonomy_name) %}
+          {% endfor %}
+          {% set_global sorted_taxonomies = sorted_taxonomies | sort %}
+
+          {% for taxonomy_name in sorted_taxonomies %}
+          {% set terms = page.taxonomies[taxonomy_name] %}
+          • {{ taxonomy_name | capitalize }}:
+          {% for term_name in terms %}
+          {% set term = get_taxonomy_term(kind=taxonomy_name, term=term_name) %}
+          <a href="{{ term.permalink }}">{{ term.name }}</a>{% if not loop.last %},{% endif %}
+          {% endfor %}
+          {% endfor %}
+        </lable>
+
+        <div class="flex flex-shrink justify-center text-white">
+            {% if page.extra.unlisted %}<span class="bg-red-600 p-1 m-1 text-sm pl-2 pr-2 rounded">Unlisted</span>{% endif %}
+        </div>
+    </div>
+
+    {% set meta = get_image_metadata(path=page.path ~ "banner.png", allow_missing=true) %}
+    {% if meta %}
+  <figure class="{% if page.extra.banner_extended %} break-out {% endif %} !mb-4 !mt-0">
+        <div class="bg-stone-200 dark:bg-neutral-700 sm:rounded-lg">
+            <picture>
+              <img height="500px" class="w-full aspect-square-3 rounded-none sm:rounded-lg !mb-0" src="{{ get_url(path=page.path ~ 'banner.png', cachebust=true) }}"/>
+            </picture>
+        </div>
+        {% if page.extra.banner_label %}
+        <figcaption class="text-sm text-stone-500 text-center">{{ page.extra.banner_label | markdown(inline=true) | safe }}</figcaption>
+        {% endif %}
+    </figure>
+    {% endif %}
+
+    {{ page.content | safe }}
+
+  {% if page.extra.enable_comments %}
     <hr class="!mb-4 !mt-4">
     <script src="https://giscus.app/client.js"
         data-repo="kstr0git/kstr0.xyz"
@@ -64,8 +150,4 @@
     </script> 
     {% endif %}
 </article>
-
-
 {% endblock content %}
-
-

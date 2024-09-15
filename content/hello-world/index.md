@@ -6,9 +6,6 @@ description = "My inital blog post"
 [extra]
 subtitle = "Is this thing on?"
 unlisted = false
-index_banner = true
-banner_extended = true
-banner_label = "Photo of lightbulb by Andrik Langfield"
 enable_comments = true
 +++
 

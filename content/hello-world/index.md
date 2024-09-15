@@ -6,7 +6,6 @@ description = "My inital blog post"
 [extra]
 subtitle = "Is this thing on?"
 unlisted = false
-enable_comments = true
 +++
 
 ## Getting Started (Again)

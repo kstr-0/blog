@@ -1,3 +1,3 @@
-[submodule "themes/fisher"]
-	path = themes/fisher
-	url = https://github.com/kstr0git/fisher.git
+[submodule "themes/swiss-zen"]
+	path = themes/swiss-zen
+	url = https://github.com/kstr0git/swiss-zen.git
